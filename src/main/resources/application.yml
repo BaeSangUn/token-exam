@@ -9,7 +9,7 @@ spring:
     password: sbs123414
   jpa:
     hibernate:
-      #ddl-auto: create
+    #ddl-auto: create
   servlet:
     multipart:
       maxFileSize: 1000MB
@@ -19,10 +19,9 @@ spring:
 cloud:
   aws:
     credentials:
-      accessKey: ${aws.accessKey}
-      secretKey: ${aws.secretKey}
+
     s3:
-      bucket: file-upload-exam
+      bucket: file-upload-sangun
       dir: /
     region:
       static: ap-northeast-2
